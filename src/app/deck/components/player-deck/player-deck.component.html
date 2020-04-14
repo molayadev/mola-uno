@@ -1,0 +1,8 @@
+<div class="player-deck" *ngIf="player">
+  <span class="player-name">{{ player.name }}</span>
+  <div *ngFor="let card of player.cards" class="player-card"
+    (click)="cardClicked(card)">
+    <app-card [card]="card"></app-card>
+  </div>
+  <span *ngIf="player.turn" class="player-turn">Your turn!</span>
+</div>

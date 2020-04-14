@@ -1,0 +1,9 @@
+.card {
+  display: flex;
+}
+
+.card .img {
+  width: 75px;
+  min-width: 3rem;
+  max-width: 150px;
+}
