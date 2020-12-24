@@ -1,0 +1,54 @@
+[debug] [2020-04-14T16:17:01.211Z] ----------------------------------------------------------------------
+[debug] [2020-04-14T16:17:01.213Z] Command:       /usr/local/bin/firebase /Users/molaya/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve
+[debug] [2020-04-14T16:17:01.213Z] CLI Version:   7.12.1
+[debug] [2020-04-14T16:17:01.213Z] Platform:      darwin
+[debug] [2020-04-14T16:17:01.213Z] Node Version:  v12.13.1
+[debug] [2020-04-14T16:17:01.216Z] Time:          Tue Apr 14 2020 18:17:01 GMT+0200 (GMT+02:00)
+[debug] [2020-04-14T16:17:01.216Z] ----------------------------------------------------------------------
+[debug] [2020-04-14T16:17:01.216Z] 
+[debug] [2020-04-14T16:17:01.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-14T16:17:01.223Z] > authorizing via signed-in user
+[debug] [2020-04-14T16:17:01.223Z] [iam] checking project mol-uno for permissions ["firebase.projects.get"]
+[debug] [2020-04-14T16:17:01.224Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/mol-uno:testIamPermissions  
+
+[debug] [2020-04-14T16:17:01.595Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-14T16:17:01.596Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mol-uno  
+ 
+[debug] [2020-04-14T16:17:03.057Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/molaya/FREELANCER/GAMES/mol-uno'...
+[info] 
+[debug] [2020-04-14T16:17:03.060Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/mol-uno/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-04-14T16:17:04.585Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/molaya/FREELANCER/GAMES/mol-uno/functions" for Cloud Functions...
+[debug] [2020-04-14T16:17:04.618Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-04-14T16:17:04.618Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-04-14T16:17:04.618Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-04-14T16:17:04.618Z] [worker-~diagnostic~-34bf003b-70df-4924-8c54-b1fcb932f302]: Assigning socketPath: /var/folders/v4/b6n4wwl55ts70qmf697zj0vw0000gn/T/fire_emu_58431.sock
+[debug] [2020-04-14T16:17:04.619Z] [worker-~diagnostic~-34bf003b-70df-4924-8c54-b1fcb932f302]: BUSY
+[info] i  hosting: Serving hosting files from: ./dist/mol-uno
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-04-14T16:17:04.914Z] [runtime-status] [58431] Functions runtime initialized. {"cwd":"/Users/molaya/FREELANCER/GAMES/mol-uno/functions","node_version":"12.13.1"}
+[debug] [2020-04-14T16:17:04.915Z] [runtime-status] [58431] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-04-14T16:17:04.917Z] [runtime-status] [58431] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/molaya/FREELANCER/GAMES/mol-uno/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-04-14T16:17:04.919Z] [runtime-status] [58431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/molaya/FREELANCER/GAMES/mol-uno/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-04-14T16:17:04.919Z] [runtime-status] [58431] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/molaya/FREELANCER/GAMES/mol-uno/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  Error: Cannot find module '/Users/molaya/FREELANCER/GAMES/mol-uno/functions/lib/index.js'. Please verify that the package.json has a valid "main" entry
+    at tryPackage (internal/modules/cjs/loader.js:295:19)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:526:18)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:782:27)
+    at Function.Module._resolveFilename (pkg/prelude/bootstrap.js:1287:46)
+    at Function.Module._load (internal/modules/cjs/loader.js:688:27)
+    at Module.require (internal/modules/cjs/loader.js:850:19)
+    at Module.require (pkg/prelude/bootstrap.js:1166:31)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /Users/molaya/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:718:33
+    at Generator.next (<anonymous>)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[debug] [2020-04-14T16:17:04.972Z] [worker-~diagnostic~-34bf003b-70df-4924-8c54-b1fcb932f302]: exited
+[debug] [2020-04-14T16:17:04.972Z] [worker-~diagnostic~-34bf003b-70df-4924-8c54-b1fcb932f302]: FINISHED
